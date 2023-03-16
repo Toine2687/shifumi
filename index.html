@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="efr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Shi Fu Mi !</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="top">
+				<div id="faces">
+					<div class="faces"><img id="book" src="assets/img/adam.png" alt="" /></div>
+					<div class="faces"><img id="hanouna" src="assets/img/dieu.png" alt="" /></div>
+				</div>
+				<div id="healthBars">
+					<div id="p1HealthBar">
+						<p class="playerName">Player One</p>
+						<div class="hBarContainer">
+							<img class="hidden" id="barSelfFull" src="assets/img/healthBars/full.png" />
+							<img class="hidden" id="barSelfTwoThird" src="assets/img/healthBars/p12bars.png" />
+							<img class="hidden" id="barSelfOneThird" src="assets/img/healthBars/p11bar.png" />
+							<img class="hidden" id="barSelfEmpty" src="assets/img/healthBars/empty.png" />
+						</div>
+						<div>
+							<!-- BESOIN DE PICTOGRAMMES FA POUR COMPTER VICTOIRES -->
+						</div>
+					</div>
+					<div id="p2HealthBar">
+						<p class="playerName">Just God</p>
+						<div class="hBarContainer">
+							<img class="hidden" id="barCpuFull" src="assets/img/healthBars/full.png" />
+							<img class="hidden" id="barCpuTwoThird" src="assets/img/healthBars/cpu2bars.png" />
+							<img class="hidden" id="barCpuOneThird" src="assets/img/healthBars/cpu1bar.png" />
+							<img class="hidden" id="barCpuEmpty" src="assets/img/healthBars/empty.png" />
+							<div>
+								<!-- BESOIN DE PICTOGRAMMES FA POUR COMPTER VICTOIRES -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1>Shifumi</h1>
+				<div id="gestureP1" class="gesture">
+					<!-- <img class="gestureImg" id="GestureP1Img" src="/assets/img/gestures/p1Paper.png" /> -->
+				</div>
+				<div id="gestureCpu" class="gesture"></div>
+			</div>
+			<div id="comment">
+				<div>
+					<p><span class="hidden" id="roundAnnouncement"></span></p>
+				</div>
+				<div id="victoryMsg" class="comments round hidden">
+					<p>Manche remportée</p>
+				</div>
+				<div id="defeatMsg" class="comments round hidden">
+					<p>Manche perdue</p>
+				</div>
+				<div id="drawMsg" class="comments round hidden">
+					<p>Egalité</p>
+				</div>
+				<div id="gameVictoryMsg" class="comments game hidden">
+					<p>Et bim ! Partie gagnée ! <br /><span id="restart">Restart</span></p>
+				</div>
+				<div id="gameDefeatMsg" class="comments game hidden">
+					<p>Vous avez perdu...<br /><br /><span id="restart2">Restart</span></p>
+				</div>
+			</div>
+			<div id="fighters">
+				<div id="fighter1"></div>
+				<div id="fighter2"></div>
+			</div>
+			<div id="fightOrDie">
+				<div id="fightBtns">
+					<img id="paperBtn" src="assets/img/buttons/pictoPaper.png" alt="" />
+					<img id="rockBtn" src="assets/img/buttons/pictoRock.png" alt="" />
+					<img id="scissorsBtn" src="assets/img/buttons/pictoScissors.png" alt="" />
+				</div>
+			</div>
+			<div>
+				<img id="lightning" src="assets/img/thunder.webp" />
+			</div>
+		</div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
